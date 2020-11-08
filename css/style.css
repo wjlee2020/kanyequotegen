@@ -1,3 +1,26 @@
+body {
+  height: 100%;
+}
+
+.container {
+  background-image: url("https://pyxis.nymag.com/v1/imgs/c92/a84/1a597568019c694e83925a914acd08c5d8-kanye-west-white-house-2.rsquare.w700.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  padding: 4rem;
+}
+
+.container-items {
+  text-align: center;
+  padding: 2rem;
+  color: black;
+}
+
+.quote-box {
+  width: 50%;
+  height: 50%;
+}
+
 .hidden {
   display: none;
 }
