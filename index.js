@@ -22,6 +22,8 @@ const kanyeSounds = () => {
 
 
 const kanyeQuote = async () => {
+
+    try{
     const kanyeResponse = await fetch(kanyeApi);
     const quoteJson = await kanyeResponse.json();
     const randomQuote = document.createElement('h3');
@@ -31,6 +33,10 @@ const kanyeQuote = async () => {
     kanyeBtn.classList.toggle('hidden');
     newQuoteBtn.classList.toggle('hidden');
     kanyeSounds();
+    }
+    catch(err) {
+        console.error(`${err}: There was an unexpected error.`);
+    }
 }
 
 
